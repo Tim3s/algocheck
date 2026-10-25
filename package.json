@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:problems": "tsx src/batch/run-problem-testcases.ts",
+    "worker": "tsx src/worker/index.ts",
+    "run:candidate": "tsx src/core/algorithms/shortest-path/candidate.ts",
+    "run:reference": "tsx src/core/algorithms/shortest-path/reference.ts",
+    "dev:server": "tsx src/server/index.ts",
+    "test:random": "tsx -e \"import { runRandomShortestPathFlow } from './src/core/testing/runner.ts'; runRandomShortestPathFlow({ runs: 100 });\"",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "npm": "^12.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

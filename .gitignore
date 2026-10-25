@@ -1,0 +1,23 @@
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local database and runtime files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.log
+
+# Build and coverage output
+dist/
+coverage/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
